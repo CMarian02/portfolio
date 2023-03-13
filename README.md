@@ -1,1 +1,2 @@
-<h1 align = "center">[🛠️]Project in Progress -> 0[%] -- 100[%] [🛠️]</h1>
+<h3 align = "center">[🛠️]Project in Progress[🛠️]</h3>
+<p align = "center"> 🚫 0% Completed </p>
