@@ -53,7 +53,7 @@ section {
 
 .section {
   transform: translateY(-100%);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color: var(--primary-color);
 }
 
@@ -65,29 +65,21 @@ section {
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: slateblue;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: yellowgreen;
 }
 
 .sec4 {
-  display: none;
-  transform: translateY(0) scale(1);
-  background-color: yellow;
-}
-
-.sec5 {
   display: none;
   transform: translateY(0) scale(1);
 }
 
 .active {
   display: block;
-  animation: scaleAnim 0.9s ease-in-out;
+  animation: scaleAnim 0.7s ease-in-out;
 }
 @keyframes scaleAnim {
   0% {
@@ -105,11 +97,20 @@ section {
   right: 4%;
   display: flex;
   flex-direction: column;
-  transform: translateY(-50%);
+  transform: translateY(-35%);
+  animation: scaleAnim 0.7s ease-in-out;
+}
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    transform: translateY(50) scaleY(1);
+  }
 }
 .points-to-switch .active-btn {
   background-color: var(--color-secondary) !important;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .points-to-switch .active-btn i {
   color: var(--color-white) !important;
@@ -132,6 +133,12 @@ section {
   color: var(--color-grey-2);
   pointer-events: none;
 }
+.points-to-switch .control:hover {
+  background-color: var(--color-grey-3);
+}
+.points-to-switch .control:hover i {
+  color: var(--color-white);
+}
 
 .header-content {
   display: grid;
@@ -146,6 +153,7 @@ section {
 }
 .header-content .right-header .name {
   font-size: 3rem;
+  cursor: default;
 }
 .header-content .right-header .name span {
   color: var(--color-secondary);
@@ -161,15 +169,15 @@ section {
 }
 .header-content .left-header .h-shape {
   transition: all 0.4s ease-in-out;
-  width: 65%;
+  width: 73%;
   height: 100%;
   background-color: var(--color-secondary);
   position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
-  -webkit-clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
-          clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 14% 27%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 14% 27%, 0% 100%);
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
@@ -210,6 +218,9 @@ section {
 .main-btn .btn-text {
   padding: 0 2rem;
 }
+.main-btn .btn-text:hover {
+  color: var(--color-grey-2);
+}
 .main-btn .btn-icon {
   background-color: var(--color-secondary);
   display: flex;
@@ -236,4 +247,20 @@ section {
   background-color: var(--color-secondary);
   transform: translateX(0);
   transition: all 0.4s ease-out;
+}
+
+.sec2 .h-shape {
+  transition: all 0.4s ease-in-out;
+  width: 73%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 14% 27%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 14% 27%, 0% 100%);
+}
+.sec2 span {
+  color: green;
 }/*# sourceMappingURL=style.css.map */
