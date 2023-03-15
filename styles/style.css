@@ -7,7 +7,7 @@
 
 :root {
   --primary-color: #191d2b;
-  --color-secondary: #27AE60;
+  --color-secondary: #D25B1F;
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -102,7 +102,7 @@ section {
   position: fixed;
   z-index: 10;
   top: 50%;
-  right: 3%;
+  right: 4%;
   display: flex;
   flex-direction: column;
   transform: translateY(-50%);
