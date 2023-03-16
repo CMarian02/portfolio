@@ -161,6 +161,7 @@ section {
 .header-content .right-header p {
   margin: 1.5rem 0;
   line-height: 2rem;
+  cursor: default;
 }
 .header-content .left-header {
   display: flex;
@@ -184,12 +185,13 @@ section {
   height: 90%;
   width: 68%;
   margin-left: 4rem;
-  background-color: var(--color-black);
+  background-color: var(--primary-color);
   transition: all 0.4s ease-in-out;
 }
 .header-content .left-header .image img {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.4s ease-in-out;
@@ -247,6 +249,10 @@ section {
   background-color: var(--color-secondary);
   transform: translateX(0);
   transition: all 0.4s ease-out;
+}
+.main-btn:hover .btn-icon {
+  color: seagreen;
+  transition: all 0.4s ease-in-out;
 }
 
 .sec2 .h-shape {
@@ -378,4 +384,44 @@ section {
 .project:hover .hover-project {
   opacity: 1;
   transform: scale(1);
+}
+
+.contact-zone {
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+}
+.contact-zone p {
+  font-size: 2.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+.contact-zone .contact-element {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  transition: all 0.4s ease-in-out;
+}
+.contact-zone .contact-element a {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.contact-zone .contact-element a:hover {
+  background-color: var(--color-white);
+  border-radius: 50%;
+}
+.contact-zone .contact-element a:hover i {
+  color: var(--primary-color);
+}
+.contact-zone .contact-element a i {
+  font-size: 5rem;
+  color: var(--color-white);
 }/*# sourceMappingURL=style.css.map */

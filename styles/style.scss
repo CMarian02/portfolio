@@ -166,6 +166,7 @@ section{
         p{
             margin: 1.5rem 0;
             line-height: 2rem;
+            cursor: default;
         }
     }
 
@@ -189,11 +190,12 @@ section{
             height: 90%;
             width: 68%;
             margin-left: 4rem;
-            background-color: var(--color-black);
+            background-color: var(--primary-color);
             transition: all .4s ease-in-out;
             img{
                 width: 100%;
                 height: 100%;
+                border-radius: 5px;
                 object-fit: cover;
                 transition: all .4s ease-in-out;
                 filter: grayscale(100%);
@@ -252,6 +254,10 @@ section{
             background-color: var(--color-secondary);
             transform: translateX(0);
             transition: all .4s ease-out;
+        }
+        .btn-icon{
+            color: seagreen;
+            transition: all .4s ease-in-out;
         }
     }
 }
@@ -389,4 +395,46 @@ section{
 .project:hover .hover-project{
     opacity: 1;
     transform: scale(1);
+}
+
+// Editing Section 4 for Contact Page
+
+.contact-zone{
+    position: absolute;
+    transition: all .4s ease-in-out;
+    p{
+        font-size: 2.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem 0;
+    }
+    .contact-element{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7rem;
+        transition: all .4s ease-in-out;
+        a{
+            width: 10rem;
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            &:hover{
+                background-color: var(--color-white);
+                border-radius: 50%;
+                i{
+                    color: var(--primary-color);
+                }
+            }
+            i{
+                font-size: 5rem;
+                color: var(--color-white);
+            }
+        }
+    }
 }
