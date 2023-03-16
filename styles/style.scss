@@ -92,7 +92,7 @@ section{
     }
 }
 
-
+// Editing "buttons" to switch sections.
 
 .points-to-switch{
     position: fixed;
@@ -143,6 +143,8 @@ section{
         }
     }
 }
+
+// Editing Home Page
 
 .header-content{
     display: grid;
@@ -202,6 +204,9 @@ section{
         }
     }
 }
+
+// Editing Button('go github')
+
 .btn-container{
     display: flex;
     align-self: flex-start;
@@ -250,6 +255,9 @@ section{
         }
     }
 }
+
+// Editing Section 2 for About Page
+
 .sec2{
     .h-shape{
         transition: all .4s ease-in-out;
@@ -260,10 +268,125 @@ section{
         left: 0;
         top: 0;
         z-index: -1;
-        clip-path: polygon(0 0, 100% 0%, 14% 27%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0%, 14% 14%, 0% 100%);
     }
     span{
         color: green;
     }
 
-} 
+}
+
+// Editing Section 3 for Portfolio Page
+/*.sec3{
+    .h-shape{
+        transition: all .4s ease-in-out;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-secondary);
+        position: absolute;
+        left: 0;
+        right:0;
+        top: 0;
+        z-index: -1;
+        clip-path: polygon(22% 0, 100% 100%, 100% 0, 89% 100%, 100% 100%, 22% 0, 0 100%, 0 0);
+    }
+}*/
+.main-title{
+    text-align:center;
+    h2{
+        position:relative;
+        text-transform: uppercase;
+        font-size:4rem;
+        font-weight: 700;
+        cursor: default;
+        span{
+            color: var(--color-secondary);
+        }
+    }
+    .bg-text{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        color: var(--color-grey-5);
+        transition: all .4s ease-in-out;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        font-weight: 800;
+        font-size: 6.3rem;
+    }
+}
+
+.port-text{
+    padding: 2rem 0;
+    text-align: center;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    .project{
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 15px;
+        }
+        .hover-project{
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-secondary);
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            opacity: 0;
+            transform: scale(0);
+            transition: all .4s ease-in-out;
+            h3{
+                font-size: 1.5rem;
+                color: var(--color-white);
+                margin-bottom: 1.5rem;
+            }
+            .source-icons{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .icon{
+                    background-color: var(--primary-color);
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 1rem;
+                    cursor: pointer;
+                    transition: all .4s ease-in-out;
+                    i{
+                        font-size: 1.5rem;
+                        color: var(--color-white);
+                        margin: 0 1rem;
+                    }
+                    &:hover{
+                        background-color: var(--color-white);
+                        i{
+                            color: var(--primary-color);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.project:hover .hover-project{
+    opacity: 1;
+    transform: scale(1);
+}
