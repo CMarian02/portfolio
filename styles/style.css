@@ -387,7 +387,7 @@ section {
 }
 
 .contact-zone {
-  position: absolute;
+  position: relative;
   transition: all 0.4s ease-in-out;
 }
 .contact-zone p {
@@ -422,6 +422,11 @@ section {
   color: var(--primary-color);
 }
 .contact-zone .contact-element a i {
+  width: 7.5rem;
+  height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 5rem;
   color: var(--color-white);
 }

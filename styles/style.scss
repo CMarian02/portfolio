@@ -401,7 +401,7 @@ section{
 // Editing Section 4 for Contact Page
 
 .contact-zone{
-    position: absolute;
+    position: relative;
     transition: all .4s ease-in-out;
     p{
         font-size: 2.3rem;
@@ -433,6 +433,11 @@ section{
                 }
             }
             i{
+                width: 7.5rem;
+                height: 7.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 font-size: 5rem;
                 color: var(--color-white);
             }
