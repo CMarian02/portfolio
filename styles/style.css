@@ -267,9 +267,6 @@ section {
   -webkit-clip-path: polygon(0 0, 100% 0%, 14% 14%, 0% 100%);
           clip-path: polygon(0 0, 100% 0%, 14% 14%, 0% 100%);
 }
-.sec2 span {
-  color: green;
-}
 
 /*.sec3{
     .h-shape{
@@ -433,6 +430,86 @@ section {
   color: var(--color-white);
 }
 
+.main-title-abt {
+  padding-top: 4rem;
+  text-align: center;
+}
+.main-title-abt h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 700;
+  cursor: default;
+}
+.main-title-abt h2 span {
+  color: var(--color-secondary);
+}
+.main-title-abt .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--color-grey-5);
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 5.3rem;
+}
+
+.about-info {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+}
+.about-info h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.about-info p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.skills {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+}
+.skills h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.skills ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skills li {
+  font-size: 1.5rem;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+.skills i {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+}
+.skills span {
+  color: var(--color-secondary);
+}
+
+.fab.fa-python {
+  color: #4B8BBE;
+}
+
+/*Timeline */
 /* 1200 WIDTH */
 @media screen and (max-width: 1200px) {
   .projects .project .hover-project h3 {
