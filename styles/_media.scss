@@ -1,4 +1,159 @@
+<<<<<<< HEAD
 @media screen and (max-width: 800px){
+=======
+/* 1200 WIDTH */
+@media screen and (max-width: 1200px){
+    .projects{
+        .project{
+            .hover-project{
+                h3{
+                    font-size: 1rem !important;
+                }
+                .source-icons{
+                    .icon{
+                        width: 30px;
+                        height: 30px;
+                        i{
+                            font-size:0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contact-element{
+        gap:3.2rem !important;
+        a{
+            width: 9rem !important;
+            height: 9rem !important;
+            i{
+                width: 6.5rem !important;
+                height: 6.5rem !important;
+            }
+        }
+    }
+    .sec2{
+        padding: 2rem 3rem;
+    }
+}
+
+/* 950 WIDTH */
+
+@media screen and (max-width: 950px){
+
+    .header-content{
+        .left-header{
+            .h-shape{
+                display:none;
+            }
+            .image{
+                width: 80%;
+                height: 100%;
+            }
+        }
+    }
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 4rem;
+        .project{
+            .hover-project{
+                h3{
+                    font-size:0.7rem !important;
+                }
+            }
+        }
+    }
+    .sec3{
+        padding: 2rem 2.5rem;
+    }
+
+    .contact-element{
+        gap:3rem !important;
+        a{
+            width: 8rem !important;
+            height: 8rem !important;
+            i{
+                width: 6rem !important;
+                height: 6rem !important;
+            }
+        }
+    }
+    .contact-zone p{
+        font-size: 1.5rem;
+    }
+
+    .sec2{
+        padding: 2rem 2.5rem;
+    }
+}
+
+/* 840 WIDTH */
+
+@media screen and (max-width: 840px){
+    header{
+        padding: 0 !important;
+    }
+        header .right-header{
+        padding: 2rem !important;
+        grid-row: 1;
+        width: 90%;
+        margin: 0 auto;
+        .name{
+            font-size: 2.5rem !important;
+         }
+        }
+    
+    .header-content {
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+        height: 100%;
+    }
+    .projects{
+        padding-bottom: 2rem !important;
+        .project{
+            .hover-project{
+                h3{
+                    font-size: 0.7rem !important;
+                }
+            }
+        }
+    }
+    .contact-element{
+        width: 100%;
+        display:grid !important;
+        gap: 3rem !important;
+        padding-bottom: 6rem;
+    }
+    
+    .sec2{
+        padding: 2rem 2.5rem;
+        .h-shape{
+            display:none;
+        }
+    }
+    
+    .about-info{
+        margin: 0;
+        padding: 0.5rem;
+        p{
+            font-size: 1.3rem;
+        }
+        h3{
+            font-size:2rem;
+        }
+    }
+    .skills{
+        h3{
+            font-size: 2rem;
+        }
+    }
+}
+
+/* 650 WIDTH */
+
+@media screen and (max-width: 650px){
+>>>>>>> 18fd495c238ff3122b4850bad56415528fece967
     header{
         padding: 0;
     }
@@ -9,6 +164,7 @@
     .header-content{
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
+        height: 100%;
     }
     .left-header{
         .h-shape{
@@ -23,6 +179,9 @@
     .projects{
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
+        .project .hover-project h3{
+            font-size: 1rem !important;
+        }
     }
 
     .main-title{
@@ -66,4 +225,15 @@
         gap: 3rem !important;
         padding-bottom: 6rem;
     }
-} 
+    
+    .main-title-abt{
+        font-size: 2rem;
+        .bg-text{
+            font-size: 4.5rem;
+        }
+    }
+
+    .h-shape{
+        display: none;
+    }
+}
