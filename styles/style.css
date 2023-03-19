@@ -360,9 +360,9 @@ section {
 .projects .project .hover-project .source-icons .icon {
   background-color: var(--primary-color);
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
+  width: 100%;
+  height: 100%;
+  display: relative;
   align-items: center;
   justify-content: center;
   margin: 0 1rem;
@@ -387,7 +387,7 @@ section {
 }
 
 .contact-zone {
-  position: absolute;
+  display: block;
   transition: all 0.4s ease-in-out;
 }
 .contact-zone p {
@@ -420,13 +420,14 @@ section {
 }
 .contact-zone .contact-element a:hover i {
   color: var(--primary-color);
+  font-size: 6rem;
 }
 .contact-zone .contact-element a i {
   font-size: 5rem;
   color: var(--color-white);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   header {
     padding: 0;
   }
@@ -480,6 +481,7 @@ section {
   .contact-element {
     width: 100%;
     display: grid !important;
+    grid-template-columns: 1fr;
     gap: 3rem !important;
     padding-bottom: 6rem;
   }
