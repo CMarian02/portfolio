@@ -30,7 +30,9 @@
             }
         }
     }
-    
+    .sec2{
+        padding: 2rem 3rem;
+    }
 }
 
 /* 950 WIDTH */
@@ -77,6 +79,10 @@
     .contact-zone p{
         font-size: 1.5rem;
     }
+
+    .sec2{
+        padding: 2rem 2.5rem;
+    }
 }
 
 /* 840 WIDTH */
@@ -115,6 +121,29 @@
         display:grid !important;
         gap: 3rem !important;
         padding-bottom: 6rem;
+    }
+    
+    .sec2{
+        padding: 2rem 2.5rem;
+        .h-shape{
+            display:none;
+        }
+    }
+    
+    .about-info{
+        margin: 0;
+        padding: 0.5rem;
+        p{
+            font-size: 1.3rem;
+        }
+        h3{
+            font-size:2rem;
+        }
+    }
+    .skills{
+        h3{
+            font-size: 2rem;
+        }
     }
 }
 
@@ -189,5 +218,16 @@
         display:grid !important;
         gap: 3rem !important;
         padding-bottom: 6rem;
+    }
+    
+    .main-title-abt{
+        font-size: 2rem;
+        .bg-text{
+            font-size: 4.5rem;
+        }
+    }
+
+    .h-shape{
+        display: none;
     }
 }

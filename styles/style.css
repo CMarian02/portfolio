@@ -457,7 +457,7 @@ section {
 }
 
 .about-info {
-  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   padding: 2rem;
@@ -466,6 +466,7 @@ section {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 2rem;
+  cursor: default;
 }
 .about-info p {
   font-size: 1.5rem;
@@ -482,6 +483,7 @@ section {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 2rem;
+  cursor: default;
 }
 .skills ul {
   list-style: none;
@@ -493,6 +495,7 @@ section {
 }
 .skills li {
   font-size: 1.5rem;
+  cursor: default;
   margin: 1rem;
   display: flex;
   align-items: center;
@@ -533,6 +536,9 @@ section {
     width: 6.5rem !important;
     height: 6.5rem !important;
   }
+  .sec2 {
+    padding: 2rem 3rem;
+  }
 }
 /* 950 WIDTH */
 @media screen and (max-width: 950px) {
@@ -567,6 +573,9 @@ section {
   .contact-zone p {
     font-size: 1.5rem;
   }
+  .sec2 {
+    padding: 2rem 2.5rem;
+  }
 }
 /* 840 WIDTH */
 @media screen and (max-width: 840px) {
@@ -598,6 +607,25 @@ section {
     display: grid !important;
     gap: 3rem !important;
     padding-bottom: 6rem;
+  }
+  .sec2 {
+    padding: 2rem 2.5rem;
+  }
+  .sec2 .h-shape {
+    display: none;
+  }
+  .about-info {
+    margin: 0;
+    padding: 0.5rem;
+  }
+  .about-info p {
+    font-size: 1.3rem;
+  }
+  .about-info h3 {
+    font-size: 2rem;
+  }
+  .skills h3 {
+    font-size: 2rem;
   }
 }
 /* 650 WIDTH */
@@ -661,5 +689,14 @@ section {
     display: grid !important;
     gap: 3rem !important;
     padding-bottom: 6rem;
+  }
+  .main-title-abt {
+    font-size: 2rem;
+  }
+  .main-title-abt .bg-text {
+    font-size: 4.5rem;
+  }
+  .h-shape {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
