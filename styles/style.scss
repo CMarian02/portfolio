@@ -523,4 +523,26 @@ section{
     color: #4B8BBE;
   }
   
+/* ScrollBar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-grey-5);
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-grey-6);
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: var(--color-grey-4);
+    border-radius: 5px;
+  }  
+  
 @import "./media";
